@@ -1,5 +1,6 @@
 from PIL import Image
 import math
+
 def overlay_images(shirt_image, pants_image):
     # Load images
     human_model = Image.open("static/humans/human_model_3.png")
