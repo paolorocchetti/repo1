@@ -1,0 +1,25 @@
+/* styles.css */
+.outfit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.shirt {
+    position: absolute;
+    top: 20px; /* Adjust the value to position the shirt correctly */
+    left: 50px; /* Adjust the value to position the shirt correctly */
+}
+
+.pants {
+    position: absolute;
+    bottom: 50px; /* Adjust the value to position the pants correctly */
+    left: 100px; /* Adjust the value to position the pants correctly */
+}
+
+.outfit img {
+    max-width: 200px;
+    margin: 10px;
+}

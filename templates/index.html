@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Outfit Selector</title>
+    <style>
+        /* Center the image on the screen */
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outfit Selector</h1>
+    <form method="post">
+        <label for="shirt">Select a shirt:</label>
+        <select id="shirt" name="shirt">
+            <option value="blue_shirt">Blue Shirt</option>
+            <option value="red_shirt">Red Shirt</option>
+            <!-- Add more shirt options here -->
+        </select>
+        <br>
+        <label for="pants">Select pants:</label>
+        <select id="pants" name="pants">
+            <option value="brown_pants">Brown Pants</option>
+            <!-- Add more pants options here -->
+        </select>
+        <br>
+        <button type="submit">Generate Outfit</button>
+    </form>
+
+    {% if composite_image_path %}
+    <h2>Generated Outfit:</h2>
+    <img src="{{ url_for('get_composite_image') }}" alt="Generated Outfit">
+    {% endif %}
+</body>
+</html>
